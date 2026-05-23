@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inversionistas McDonald's Tunja</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Babel -->
+    <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const whatsapp = "https://wa.me/573001234567";
+
+      function App() {
+        return (
+          <div>
+            
+            {/* HERO */}
+            <section className="bg-red-600 text-white p-10 text-center">
+              <h1 className="text-5xl font-bold mb-4">
+                Invierte en el futuro de Tunja
+              </h1>
+              <p className="text-xl mb-6">
+                Proyecto para traer una franquicia tipo McDonald's a la ciudad
+              </p>
+
+              <a href={whatsapp} className="bg-yellow-400 text-black px-6 py-3 rounded-full font-bold">
+                Sé parte de la evolución de Tunja
+              </a>
+            </section>
+
+            {/* PROBLEMA */}
+            <section className="p-10 text-center bg-gray-100">
+              <h2 className="text-3xl font-bold mb-6">El Problema</h2>
+              <p>
+                Muchos inversionistas dependen de ingresos inmobiliarios irregulares,
+                con vacancias y baja rentabilidad.
+              </p>
+            </section>
+
+            {/* SOLUCIÓN */}
+            <section className="p-10 text-center">
+              <h2 className="text-3xl font-bold mb-6">La Solución</h2>
+              <p>
+                Una franquicia internacional con flujo constante de clientes y alto
+                reconocimiento de marca.
+              </p>
+            </section>
+
+            {/* PROPUESTA */}
+            <section className="p-10 bg-yellow-100 text-center">
+              <h2 className="text-3xl font-bold mb-6">Propuesta de valor</h2>
+              <p>
+                Rentabilidad objetivo del 8% - 9% anual, con proyección a largo plazo
+                y alto impacto urbano.
+              </p>
+            </section>
+
+            {/* FORM */}
+            <section className="p-10 text-center">
+              <h2 className="text-3xl font-bold mb-6">Contáctanos</h2>
+
+              <a href={whatsapp} className="bg-green-600 text-white px-6 py-3 rounded-full font-bold">
+                Escribir por WhatsApp
+              </a>
+            </section>
+
+            {/* FOOTER */}
+            <footer className="bg-black text-white p-6 text-center">
+              <p>McDonalds Tunja 2026</p>
+              <p className="text-sm">Sé parte del cambio de nuestra región</p>
+            </footer>
+
+          </div>
+        );
+      }
+
+      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
+  </body>
+</html>
+``
